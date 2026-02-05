@@ -50,7 +50,7 @@ conexao.connect(function(erro){
 //     }
 // ]
 
-// Read All - [GET] /produtos
+// Read All - [GET] /unidades
 // 1- trazer apenas 12 primeiros lista_produtos
 // SELECT * FROM produtos LIMIT 12
 // 2- trazer apenas produtos que comecem com a letra A
@@ -72,20 +72,21 @@ conexao.connect(function(erro){
 // 10- trazer todos os produtos em ordem de avaliação do menor para o maior
 // SELECT * FROM produtos ORDER BY avaliacao ASC;
 
-// objetivo: criar uma para exibir em cards(com nome da unidade, foto, endereço, email, telefone) todas as 6 unidades
- 
+// objetivo: criar uma página para exibir em cards(com nome da unidade, foto, endereço, email, telefone) todas as 6 unidades
+
 // 1 - duplicar a index.html e renomear para unidades.html
 // 2 - duplicar o app.js e renomear para app-unidades.js
 // 3 - no index.js criar a rota /unidades
 // 4 - na rota /unidades fazer o select para retornar as unidades
+
 // 5 - fazer os ajustes em unides.html, app-unidades.js e index.js necessários para funcionar a o página unidades.html
 
-app.get("/produtos", function (req, res) {
+app.get("/unidades", function (req, res) {
     res.setHeader('Access-Control-Allow-Origin', '*')
-    // res.send(lista_produtos)
-    conexao.query("SELECT * FROM produtos where avaliacao = 1 or avaliacao = 5;", function (erro, lista_produtos, campos) {
-        console.log("Listar_produtos");
-        res.send(lista_produtos)
+    // res.send(lista_unidades)
+    conexao.query("SELECT * FROM unidades", function (erro, lista_unidades, campos) {
+        console.log("Listar_unidades");
+        res.send(lista_unidades)
 })
 })
 
