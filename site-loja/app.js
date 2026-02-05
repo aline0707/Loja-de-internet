@@ -28,15 +28,15 @@ function fnMontarCardProduto(produto){
     `
     document.querySelector(".lista-produtos").innerHTML += cartao
 }
- 
-function fnCarregarProdutos(){
-    fetch('http://localhost:3000/produtos/', {method: 'GET' })
-    .then(res => res.json())
-    .then(produtos => {
+
+function fnCarregarDados() {
+    fetch('http://localhost:3000/produtos/', { method: 'GET' })
+    .then(response => response.json())
+    .then((produtos) => {
         produtos.forEach(produto => {
             fnMontarCardProduto(produto)
         });
-    })  
-    .catch(erro => console.log(erro.message))   
+    })
+    .catch(erro => console.log(erro.message))
 }
-fnCarregarProdutos()
+fnCarregarDados()

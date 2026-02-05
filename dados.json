@@ -1,0 +1,212 @@
+[
+  {
+    "titulo": "Red Nike Speed",
+    "foto": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxzaG9lfGVufDB8MHx8fDE3MjEwNDEzNjd8MA&ixlib=rb-4.0.3&q=80&w=1080",
+    "descricao": "Tênis leve, com design versátil e acabamento moderno, perfeito para acompanhar sua rotina.",
+    "preco": 499.00,
+    "avaliacao": 5
+  },
+  {
+    "titulo": "Blue Ocean Runner",
+    "foto": "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descricao": "Alta performance e amortecimento superior para suas corridas matinais com máximo conforto.",
+    "preco": 529.90,
+    "avaliacao": 4
+  },
+  {
+    "titulo": "Urban Green Stealth",
+    "foto": "https://images.unsplash.com/photo-1643584549066-fc993fc9cb43?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descricao": "Estilo urbano com solado resistente, ideal para quem busca durabilidade e um visual único.",
+    "preco": 389.00,
+    "avaliacao": 4
+  },
+  {
+    "titulo": "Cloud White Classic",
+    "foto": "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descricao": "Minimalismo e elegância em um tênis branco impecável que combina com qualquer vestuário.",
+    "preco": 450.00,
+    "avaliacao": 5
+  },
+  {
+    "titulo": "Future Purple Knit",
+    "foto": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descricao": "Tecnologia de malha respirável que se ajusta ao pé como uma meia, garantindo leveza total.",
+    "preco": 599.00,
+    "avaliacao": 5
+  },
+  {
+    "titulo": "Crimson Bolt",
+    "foto": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxzaG9lfGVufDB8MHx8fDE3MjEwNDEzNjd8MA&ixlib=rb-4.0.3&q=80&w=1080",
+    "descricao": "Destaque-se com a cor vibrante e o suporte lateral reforçado para movimentos explosivos.",
+    "preco": 479.00,
+    "avaliacao": 3
+  },
+  {
+    "titulo": "Azure Sky Walker",
+    "foto": "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descricao": "Sinta a leveza das nuvens com este modelo ergonômico feito para longas caminhadas diárias.",
+    "preco": 349.90,
+    "avaliacao": 4
+  },
+  {
+    "titulo": "Dark Forest Trail",
+    "foto": "https://images.unsplash.com/photo-1643584549066-fc993fc9cb43?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descricao": "Tração extrema para terrenos irregulares e proteção reforçada na biqueira para segurança.",
+    "preco": 620.00,
+    "avaliacao": 5
+  },
+  {
+    "titulo": "Minimalist Pure",
+    "foto": "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descricao": "A simplicidade elevada ao máximo nível de sofisticação e conforto para o seu dia a dia.",
+    "preco": 299.00,
+    "avaliacao": 4
+  },
+  {
+    "titulo": "Cosmos Violet",
+    "foto": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descricao": "Cores galácticas e palmilha tecnológica que absorve impactos de forma eficiente e suave.",
+    "preco": 515.00,
+    "avaliacao": 5
+  },
+  {
+    "titulo": "Fire Starter",
+    "foto": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxzaG9lfGVufDB8MHx8fDE3MjEwNDEzNjd8MA&ixlib=rb-4.0.3&q=80&w=1080",
+    "descricao": "Agilidade e estilo em um só produto, desenvolvido para atletas que não param um segundo.",
+    "preco": 485.00,
+    "avaliacao": 4
+  },
+  {
+    "titulo": "Deep Sea Flex",
+    "foto": "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descricao": "Solado flexível que acompanha o movimento natural do pé, proporcionando liberdade total.",
+    "preco": 410.00,
+    "avaliacao": 4
+  },
+  {
+    "titulo": "Earth Explorer",
+    "foto": "https://images.unsplash.com/photo-1643584549066-fc993fc9cb43?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descricao": "Materiais sustentáveis e resistência premium para quem vive aventuras em qualquer lugar.",
+    "preco": 540.00,
+    "avaliacao": 5
+  },
+  {
+    "titulo": "Ivory Street",
+    "foto": "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descricao": "O clássico das ruas redesenhado com detalhes modernos e materiais de alta qualidade.",
+    "preco": 399.00,
+    "avaliacao": 3
+  },
+  {
+    "titulo": "Lavender Dream",
+    "foto": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descricao": "Suave no toque e incrível no visual, este tênis é a definição de conforto contemporâneo.",
+    "preco": 465.00,
+    "avaliacao": 5
+  },
+  {
+    "titulo": "Aero Red",
+    "foto": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxzaG9lfGVufDB8MHx8fDE3MjEwNDEzNjd8MA&ixlib=rb-4.0.3&q=80&w=1080",
+    "descricao": "Sistema de ventilação avançado que mantém seus pés frescos mesmo nos treinos intensos.",
+    "preco": 510.00,
+    "avaliacao": 4
+  },
+  {
+    "titulo": "Pacific Blue",
+    "foto": "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descricao": "Inspirado no oceano, este tênis traz estabilidade e um design fluido para o esporte.",
+    "preco": 489.00,
+    "avaliacao": 5
+  },
+  {
+    "titulo": "Mossy Rock",
+    "foto": "https://images.unsplash.com/photo-1643584549066-fc993fc9cb43?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descricao": "Equilíbrio perfeito entre robustez e leveza para encarar os desafios da cidade grande.",
+    "preco": 425.00,
+    "avaliacao": 4
+  },
+  {
+    "titulo": "Snow Peak",
+    "foto": "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descricao": "Design clean com tecnologia repelente a sujeira, mantendo o aspecto de novo por mais tempo.",
+    "preco": 530.00,
+    "avaliacao": 5
+  },
+  {
+    "titulo": "Nebula Step",
+    "foto": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descricao": "Estética futurista unida a um amortecimento de última geração para o máximo bem-estar.",
+    "preco": 670.00,
+    "avaliacao": 5
+  },
+  {
+    "titulo": "Turbo Scarlet",
+    "foto": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxzaG9lfGVufDB8MHx8fDE3MjEwNDEzNjd8MA&ixlib=rb-4.0.3&q=80&w=1080",
+    "descricao": "Desenvolvido para velocidade, com travas de tração que garantem aderência em asfalto seco.",
+    "preco": 499.00,
+    "avaliacao": 4
+  },
+  {
+    "titulo": "Marine Elite",
+    "foto": "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descricao": "Materiais premium e acabamento artesanal para quem não abre mão do luxo no casual.",
+    "preco": 750.00,
+    "avaliacao": 5
+  },
+  {
+    "titulo": "Eco Forest",
+    "foto": "https://images.unsplash.com/photo-1643584549066-fc993fc9cb43?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descricao": "Produzido com polímeros reciclados, unindo consciência ambiental e design de ponta.",
+    "preco": 440.00,
+    "avaliacao": 4
+  },
+  {
+    "titulo": "Zenith White",
+    "foto": "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descricao": "O ponto mais alto do conforto, com espuma de memória que se molda ao formato do seu pé.",
+    "preco": 320.00,
+    "avaliacao": 4
+  },
+  {
+    "titulo": "Prism Violet",
+    "foto": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descricao": "Reflexos modernos e estilo arrojado para quem quer se destacar em qualquer ambiente.",
+    "preco": 580.00,
+    "avaliacao": 5
+  },
+  {
+    "titulo": "Velocity Red",
+    "foto": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxzaG9lfGVufDB8MHx8fDE3MjEwNDEzNjd8MA&ixlib=rb-4.0.3&q=80&w=1080",
+    "descricao": "Sinta a energia de cada passo com a mola de propulsão integrada na entressola de carbono.",
+    "preco": 899.00,
+    "avaliacao": 5
+  },
+  {
+    "titulo": "Aqua Glide",
+    "foto": "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descricao": "Tênis resistente à água, ideal para dias chuvosos sem perder o estilo e a praticidade.",
+    "preco": 475.00,
+    "avaliacao": 3
+  },
+  {
+    "titulo": "Granite Tough",
+    "foto": "https://images.unsplash.com/photo-1643584549066-fc993fc9cb43?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descricao": "Estrutura robusta e cores sóbrias que garantem um visual sério e muita durabilidade.",
+    "preco": 510.00,
+    "avaliacao": 4
+  },
+  {
+    "titulo": "Cloud Nine",
+    "foto": "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descricao": "Tão leve que você vai esquecer que está usando tênis. O ápice da engenharia esportiva.",
+    "preco": 615.00,
+    "avaliacao": 5
+  },
+  {
+    "titulo": "Lilac Breeze",
+    "foto": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "descricao": "Toque suave e cores pastéis que trazem uma sensação de frescor e leveza para o seu look.",
+    "preco": 435.00,
+    "avaliacao": 4
+  }
+]
