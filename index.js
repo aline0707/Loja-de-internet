@@ -18,13 +18,13 @@ let conexao = mysql.createConnection({
     database: "gutoxa27_bd_loja"
 })
 
-conexao.connect(function(erro){
-    if(erro) {
-    console.log("Deu ruim na conexao \n")
-    throw erro;
-    }else{
-    console.log("Conexão deu bom \n")
-}
+conexao.connect(function (erro) {
+    if (erro) {
+        console.log("Deu ruim na conexao \n")
+        throw erro;
+    } else {
+        console.log("Conexão deu bom \n")
+    }
 })
 // [
 //     {
@@ -87,9 +87,32 @@ app.get("/unidades", function (req, res) {
     conexao.query("SELECT * FROM unidades", function (erro, lista_unidades, campos) {
         console.log("Listar_unidades");
         res.send(lista_unidades)
+    })
 })
+app.get("/produtos", function (req, res) {
+    res.setHeader('Access-Control-Allow-Origin', '*')
+    conexao.query("SELECT * FROM produtos", function (erro, lista_produtos, campos) {
+        console.log("Listar_produtos");
+        res.send(lista_produtos)
+    })
+    })
+
+    app.get("/produtos/:categoria", function (req, res) {
+    res.setHeader('Access-Control-Allow-Origin', '*')
+    const categoria = req.params.categoria
+    conexao.query(`SELECT * FROM produtos where categoria='${categoria}'`, function (erro, dados, campos) {
+    res.send(dados)
+   })
 })
 
-
+app.get("/produtos/:categoria/:ordem", function (req, res) {
+    res.setHeader('Access-Control-Allow-Origin', '*')
+    const categoria = req.params.categoria
+    const ordem = req.params.ordem
+    conexao.query(`SELECT * FROM produtos where categoria='${categoria}' order by ${ordem}`, function (erro, dados, campos) {
+    res.send(dados)
+   })
+})
+     
 
 app.listen(3000)

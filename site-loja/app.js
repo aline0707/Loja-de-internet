@@ -1,4 +1,4 @@
-function fnMontarCardProduto(produto){
+function fnMontarCardProduto(produto) {
     let cartao = `
         <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-3">
                 <div class="card">
@@ -30,14 +30,30 @@ function fnMontarCardProduto(produto){
 }
 
 function fnCarregarDados() {
-    fetch('http://localhost:3000/produtos/', { method: 'GET' })
-    .then(response => response.json())
-    .then((produtos) => {
-        produtos.forEach(produto => {
-            fnMontarCardProduto(produto)
-        });
-    })
-    .catch(erro => console.log(erro.message))
+
+    const parametros = new URLSearchParams(window.location.search)
+    const existe_categoria = parametros.has('categoria')
+const existe_ordem = parametros.has('ordem')
+
+    let rota_categoria = ''
+    let rota_ordem = ''
+    if (existe_categoria) {
+        rota_categoria = parametros.get('categoria') + "/"
+    }
+    if (existe_ordem) {
+        rota_ordem = parametros.get('ordem') + "/"
+    }
+    fetch('http://localhost:3000/produtos/' + rota_categoria + rota_ordem, { method: 'GET' })
+
+
+        .then(response => response.json())
+        .then((produtos) => {
+            produtos.forEach(produto => {
+                fnMontarCardProduto(produto)
+            });
+        })
+        .catch(erro => console.log(erro.message))
 }
+
 fnCarregarDados()
 
