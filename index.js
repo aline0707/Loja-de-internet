@@ -1,12 +1,14 @@
 const express = require('express')
 const app = express()
+// necessário para permitir requisições de diferentes origens(dominios/servidores)
+const cors = require('cors')
+app.use(cors())
 
 /* Indica que todas as requisições podem receber Body em JSON. A partir disso, o Express aplica um JSON.parse para o conteudo recebido */
 
 app.use(express.json())
 
 app.get('/', function (req, res) {
-    res.setHeader('Acess-Control-Allow-Origin', '*')
     res.send('Loja-Informatica')
 })
 
@@ -82,7 +84,6 @@ conexao.connect(function (erro) {
 // 5 - fazer os ajustes em unides.html, app-unidades.js e index.js necessários para funcionar a o página unidades.html
 
 app.get("/unidades", function (req, res) {
-    res.setHeader('Access-Control-Allow-Origin', '*')
     // res.send(lista_unidades)
     conexao.query("SELECT * FROM unidades", function (erro, lista_unidades, campos) {
         console.log("Listar_unidades");
@@ -90,7 +91,6 @@ app.get("/unidades", function (req, res) {
     })
 })
 app.get("/produtos", function (req, res) {
-    res.setHeader('Access-Control-Allow-Origin', '*')
     conexao.query("SELECT * FROM produtos", function (erro, lista_produtos, campos) {
         console.log("Listar_produtos");
         res.send(lista_produtos)
@@ -98,7 +98,6 @@ app.get("/produtos", function (req, res) {
     })
 
     app.get("/produtos/:categoria", function (req, res) {
-    res.setHeader('Access-Control-Allow-Origin', '*')
     const categoria = req.params.categoria
     conexao.query(`SELECT * FROM produtos where categoria='${categoria}'`, function (erro, dados, campos) {
     res.send(dados)
@@ -106,7 +105,6 @@ app.get("/produtos", function (req, res) {
 })
 
 app.get("/produtos/:categoria/:ordem", function (req, res) {
-    res.setHeader('Access-Control-Allow-Origin', '*')
     const categoria = req.params.categoria
     const ordem = req.params.ordem
     conexao.query(`SELECT * FROM produtos where categoria='${categoria}' order by ${ordem}`, function (erro, dados, campos) {
@@ -114,5 +112,15 @@ app.get("/produtos/:categoria/:ordem", function (req, res) {
    })
 })
      
+app.post("/produto/", function (req, res) {
+    const {titulo, preco, categoria, descricao, foto, avaliacao}= req.body;
+    conexao.query(`
+        INSERT INTO produtos (titulo, preco, categoria, descricao, foto, avaliacao) values ('${titulo}', ${preco}, '${categoria}', '${descricao}', '${foto}', ${avaliacao})`, function (erro, resultado) {
+        if (erro) {
+         res.json(erro);
+            res.send(resultado.insertId);
+        }
+    });
+})
 
 app.listen(3000)
