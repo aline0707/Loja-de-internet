@@ -16,11 +16,11 @@ function fnCadastrarProdutos() {
     let formDados = {
         titulo: document.getElementById("titulo").value,
         preco: document.getElementById("preco").value,
-        categoria: document.getElementById("categoria").value,
         descricao: document.getElementById("descricao").value,
+        avaliacao: document.getElementById("avaliacao").value,
         foto: document.getElementById("foto").value,
-        avaliacao: document.getElementById("avaliacao").value
-        
+        categoria: document.getElementById("categoria").value
+
     }
     console.dir(formDados)
 
@@ -31,14 +31,15 @@ function fnCadastrarProdutos() {
         },
         body: JSON.stringify(formDados)
     })
-    .then(reposta => reposta.json())
-    .then(dados => {
-        console.log('Produto cadastrado:', dados);
-        fnLimparCampos()
-    })
-    .catch(error => {
-        console.error('Erro ao cadastrar produto:', error);
-    });
+        .then(reposta => reposta.json())
+        .then((dados) => {
+            console.log(dados);
+            fnLimparCampos()
+        })
+        .catch(erro =>
+            console.log(erro.message))
+}
+
 
 let foto = document.getElementById("foto")
 let btn_salvar = document.getElementById("btn-salvar-produto")
@@ -53,4 +54,3 @@ btn_salvar.addEventListener("click", function () {
 })
 
 
-}

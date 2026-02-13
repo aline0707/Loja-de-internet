@@ -114,13 +114,35 @@ app.get("/produtos/:categoria/:ordem", function (req, res) {
      
 app.post("/produto/", function (req, res) {
     const {titulo, preco, categoria, descricao, foto, avaliacao}= req.body;
+    let sql = `INSERT INTO produtos (titulo, preco, descricao, avaliacao, foto, categoria) values ('${titulo}', ${preco}, '${descricao}', ${avaliacao}, '${foto}', '${categoria}')`
+    console.log(sql)
+
     conexao.query(`
-        INSERT INTO produtos (titulo, preco, categoria, descricao, foto, avaliacao) values ('${titulo}', ${preco}, '${categoria}', '${descricao}', '${foto}', ${avaliacao})`, function (erro, resultado) {
+        INSERT INTO produtos (titulo, preco, descricao, avaliacao, foto, categoria) values ('${titulo}', ${preco}, '${descricao}', ${avaliacao}, '${foto}', '${categoria}')`, function (erro, resultado) {
         if (erro) {
          res.json(erro);
-            res.send(resultado.insertId);
+           
         }
+         res.send(resultado.insertId);
+    });
+})
+
+app.post("/unidade/", function (req, res) {
+    const {nome_da_loja, telefone, email, endereco, latitude, longitude, foto}= req.body;
+    let sql = `INSERT INTO unidades (nome_da_loja, telefone, email, endereco, latitude, longitude, foto) values ('${nome_da_loja}', ${telefone}, '${email}', '${endereco}', '${latitude}', '${longitude}', '${foto}')`
+    console.log(sql)
+
+    conexao.query(`
+        INSERT INTO unidades (nome_da_loja, telefone, email, endereco, latitude, longitude, foto) values ('${nome_da_loja}', ${telefone}, '${email}', '${endereco}', '${latitude}', '${longitude}', '${foto}')`, function (erro, resultado) {
+        if (erro) {
+         res.json(erro);
+           
+        }
+         res.send(resultado.insertId);
     });
 })
 
 app.listen(3000)
+
+
+
