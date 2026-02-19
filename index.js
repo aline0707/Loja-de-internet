@@ -113,12 +113,9 @@ app.get("/produtos/:categoria/:ordem", function (req, res) {
 })
      
 app.post("/produto/", function (req, res) {
-    const {titulo, preco, categoria, descricao, foto, avaliacao}= req.body;
-    let sql = `INSERT INTO produtos (titulo, preco, descricao, avaliacao, foto, categoria) values ('${titulo}', ${preco}, '${descricao}', ${avaliacao}, '${foto}', '${categoria}')`
-    console.log(sql)
-
-    conexao.query(`
-        INSERT INTO produtos (titulo, preco, descricao, avaliacao, foto, categoria) values ('${titulo}', ${preco}, '${descricao}', ${avaliacao}, '${foto}', '${categoria}')`, function (erro, resultado) {
+    const  data = req.body
+    conexao.query('INSERT INTO produtos set?', [data],
+        function (erro, resultado) {
         if (erro) {
          res.json(erro);
            
@@ -128,12 +125,36 @@ app.post("/produto/", function (req, res) {
 })
 
 app.post("/unidade/", function (req, res) {
-    const {nome_da_loja, telefone, email, endereco, latitude, longitude, foto}= req.body;
-    let sql = `INSERT INTO unidades (nome_da_loja, telefone, email, endereco, latitude, longitude, foto) values ('${nome_da_loja}', ${telefone}, '${email}', '${endereco}', '${latitude}', '${longitude}', '${foto}')`
-    console.log(sql)
+    const data= req.body;
+    conexao.query('INSERT INTO unidades set?', [data], function (erro, resultado) {
+        if (erro) {
+         res.json(erro);
+           
+        }
+         res.send(resultado.insertId);
+    });
+})
+// LOGIN
+app.post("/login/", function (req, res){
+    const usuario = req.body.usuario
+    const senha = req.body.senha
+    conexao.query(`select * from usuarios where usuario = '${usuario}' and senha = '${senha}'`, function (erro, resultado, campos){
+        if (erro){
+            res.send(erro)
+        }else{
+            if (resultado.length > 0){
+                res.sendStatus(200)
+            }else{
+                res.sendStatus(401)
+            }
+        }
+    })
+})
 
-    conexao.query(`
-        INSERT INTO unidades (nome_da_loja, telefone, email, endereco, latitude, longitude, foto) values ('${nome_da_loja}', ${telefone}, '${email}', '${endereco}', '${latitude}', '${longitude}', '${foto}')`, function (erro, resultado) {
+app.post("/usuario/", function (req, res) {
+    const  data = req.body
+    conexao.query('INSERT INTO usuarios set?', [data],
+        function (erro, resultado) {
         if (erro) {
          res.json(erro);
            

@@ -50,3 +50,9 @@ btn_salvar.addEventListener("click", function () {
     fnCadastrarUnidades()
 })
 
+function fnCriarToast() {   
+    const toastLiveExample = document.getElementById('liveToast')
+    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+    toastBootstrap.show()
+}
+

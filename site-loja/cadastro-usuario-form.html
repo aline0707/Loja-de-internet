@@ -25,12 +25,12 @@
                                 <div class="row gy-3 gy-md-4 gy-lg-0">
                                     <div id="fundo-imagem"
                                         class="col-12 col-lg-6 bsb-overlay background-position-center background-size-cover"
-                                        style="--bsb-overlay-opacity: 0.7; background-image: url('https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');background-size: cover;">
+                                        style="--bsb-overlay-opacity: 0.7; background-image: url('https://images.unsplash.com/photo-1602443803498-6c7c4e23f505?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');background-size: cover;">
                                         <div class="row h-100" style="background-color: #0000008c;">
                                             <div class="col-12 col-xl-12">
                                                 <div class="container contact-info-wrapper py-4 py-xl-5">
-                                                    <h2 class="h1 mb-3 text-light">Cadastro de Unidades</h2>
-                                                    <p class="lead fs-4 text-light opacity-75 mb-4 mb-xxl-5">Hora é essa vamos cadastrar novas unidades</p>
+                                                    <h2 class="h1 mb-3 text-light"> Cadastro de Usuários</h2>
+                                                    <p class="lead fs-4 text-light opacity-75 mb-4 mb-xxl-5">  Hora é essa vamos cadastrar novos usuários</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -38,45 +38,49 @@
                                     <div class="col-12 col-lg-6">
                                         <div class="row align-items-lg-center h-100">
                                             <div class="col-12">
-                                                <form action="#" id="form-produtos">
+                                                <form action="#" id="form-cad-usuario">
                                                     <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
                                                         <div class="col-12">
-                                                            <label for="titulo" class="form-label">Nome da loja</label>
-                                                            <input type="text" class="form-control" id="nome_da_loja">
+                                                            <label for="titulo" class="form-label">Usuário</label>
+                                                            <input type="text" class="form-control" id="usuario">
                                                         </div>
                                                         <div class="col-12 mt-4">
-                                                            <label for="foto" class="form-label">Telefone</label>
-                                                            <input type="text" class="form-control" id="telefone">
+                                                            <label for="foto" class="form-label">Senha</label>
+                                                            <input type="text" class="form-control" id="senha">
                                                         </div>
                                                         <div class="col-12 col-md-6 mt-4">
-                                                            <label for="avaliacao" class="form-label">Email</label>
-                                                            <input type="text" class="form-control" id="email">
+                                                            <label for="avaliacao" class="form-label">Nome</label>
+                                                            <input type="text" class="form-control" id="nome">
                                                         </div>
                                                         <div class="col-12 col-md-6 mt-4">
-                                                            <label for="avaliacao" class="form-label">Endereço</label>
-                                                            <input type="text" class="form-control" id="endereco">
+                                                            <label for="avaliacao" class="form-label">Sobrenome</label>
+                                                            <input type="text" class="form-control" id="sobrenome">
 
                                                         </div>
                                                         <div class="col-12 col-md-6 mt-4">
-                                                            <label for="avaliacao" class="form-label">Latitude</label>
-                                                            <input type="text" class="form-control" id="latitude">
+                                                            <label for="avaliacao" class="form-label">Cidade</label>
+                                                            <input type="text" class="form-control" id="cidade">
 
                                                         </div>
                                                         <div class="col-12 col-md-6 mt-4">
-                                                            <label for="avaliacao" class="form-label">Longitude</label>
-                                                            <input type="text" class="form-control" id="longitude">
+                                                            <label for="avaliacao" class="form-label">Estado</label>
+                                                            <input type="text" class="form-control" id="estado">
 
                                                         </div>
 
                                                         <div class="col-12 col-md-6 mt-4">
-                                                            <label for="preco" class="form-label">Foto</label>
-                                                            <input type="text" class="form-control" id="foto">
+                                                            <label for="permissao" class="form-label">Permissão</label>
+                                                            <input class="form-control" id="permissao" list="listaDeOpcoes" placeholder="Admin ou Vendedor">
+                                                            <datalist id="listaDeOpcoes">
+                                                                <option value="admin"></option>
+                                                                <option value="vendedor"></option>
+                                                            </datalist>
                                                         </div>
 
                                                         <div class="col-12">
                                                             <div class="d-grid">
                                                                 <button class="btn btn-primary btn-lg" type="button"
-                                                                    id="btn-salvar-unidade">Cadastrar Unidade</button>
+                                                                    id="btn-salvar-usuario">Cadastrar Usúario</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -105,7 +109,7 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
-    <script src="app_form_unidades.js"></script>
+    <script src="app-cadastro-form.js"></script>
 </body>
 
 </html>
