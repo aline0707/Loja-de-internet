@@ -97,6 +97,14 @@ app.get("/produtos", function (req, res) {
     })
     })
 
+    // Read One - [GET] /produto/
+app.get("/produto/:id", function (req, res) {
+    const id = req.params.id
+    conexao.query("SELECT * FROM produtos where id = ?", [id], function (erro, dados, campos) {
+        res.json(dados)
+    })
+})
+
     app.get("/produtos/:categoria", function (req, res) {
     const categoria = req.params.categoria
     conexao.query(`SELECT * FROM produtos where categoria='${categoria}'`, function (erro, dados, campos) {
