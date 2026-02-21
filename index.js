@@ -119,7 +119,29 @@ app.get("/produtos/:categoria/:ordem", function (req, res) {
     res.send(dados)
    })
 })
-     
+
+//update - [PUT] /produto/ :id
+app.put("/produto/:id", function (req, res) {
+    const id = req.params.id
+    const data = req.body
+    conexao.query(`UPDATE produtos set ? where id = ${id}`, [data], function (erro, resultado) {
+        if (erro) {
+            res.send(erro)
+        } 
+            res.send({status:200, message: "Atualizado com sucesso!"})
+    })
+})
+// delete - [DELETE] /produto/ :id
+app.delete("/produto/:id", function (req, res) {
+    const id = req.params.id
+    conexao.query(`DELETE FROM produtos where id = ${id}`, function (erro, resultado) {
+        if (erro) {
+            res.send(erro)
+        }
+        res.send({status:200, message: "Excluído com sucesso!"})
+    })
+})
+
 app.post("/produto/", function (req, res) {
     const  data = req.body
     conexao.query('INSERT INTO produtos set?', [data],
